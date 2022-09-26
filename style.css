@@ -102,13 +102,13 @@ nav .container{
     justify-content: space-between;
 }
 
-nav .search-bar{
-    background: var(--color-light);
+.search-bar{
+    background: lightcyan;
     border-radius: var(--border-radius);
     padding: var(--search-padding);
 }
 
-nav .search-bar input[type="search"] {
+.search-bar input[type="search"] {
     background: transparent;
     width: 30vw;
     margin-left: 1rem;
@@ -116,7 +116,7 @@ nav .search-bar input[type="search"] {
     color: var(--color-dark);
 }
 
-nav .search-bar input[type="search"]::placeholder{
+.search-bar input[type="search"]::placeholder{
     color: var(--color-gray);
 }
 
@@ -425,4 +425,37 @@ display: none;
 
 .middle .liked-by p{
     margin-left: 0.5rem;
+}
+
+
+/* ---------------------- RIGHT ------------------- */
+.main .container .right{
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+    bottom: 0%;
+}
+
+.right .messages{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.right .messages .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.right .messages i {
+    font-size: 1.4rem;
+    background: transparent;
+}
+
+.right .messages .search-bar{
+    display: flex;
+    margin-bottom: 1rem;
+    background: lightcyan;
 }
